@@ -1,5 +1,5 @@
 .menu-btn, .header button {
-  min-height: 1.5rem;
+  height: 3rem;
   min-width: 20vw;
   background-color: #2b2b2b;
   color: #fdfdfd;
@@ -33,6 +33,9 @@
 }
 
 @media (min-width: 1280px) {
+  .submenu {
+    height: 2.5rem;
+  }
   .menu {
     display: -ms-grid;
     display: grid;
@@ -40,7 +43,7 @@
         grid-template-columns: 1fr 1fr 1fr;
   }
   .submenu {
-    margin-top: 3rem;
+    margin-top: 4rem;
   }
 }
 
@@ -65,6 +68,7 @@
 html {
   font-family: "SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
   margin: 0px;
+  padding: 0px;
   height: 100%;
   width: 100%;
 }
@@ -86,7 +90,7 @@ body {
   color: #2b2b2b;
 }
 
-.header:active .menu {
+.fall-down-menu-appear {
   display: -ms-grid;
   display: grid;
   -webkit-animation: menu-animation 1s alternate;
@@ -104,9 +108,7 @@ body {
   z-index: 999;
   opacity: 0%;
   display: none;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 3rem;
   padding: 0%;
   margin: 0%;
 }
@@ -166,7 +168,7 @@ body {
   left: 0;
   right: 0;
   text-align: center;
-  font-size: calc(1em + 0.5vw);
+  font-size: calc(0.5em + 2vw);
 }
 
 .content #hardware-part img {
@@ -182,7 +184,7 @@ body {
   left: 0;
   right: 0;
   text-align: center;
-  font-size: calc(1em + 0.5vw);
+  font-size: calc(0.5em + 2vw);
 }
 
 .content #compatibility-part img {
@@ -194,11 +196,11 @@ body {
 .content #compatibility-part #subtitle3 {
   z-index: 800;
   position: absolute;
-  margin-top: 46%;
+  margin-top: 42%;
   left: 0;
   right: 0;
   text-align: center;
-  font-size: calc(1em + 0.5vw);
+  font-size: calc(0.5em + 2vw);
 }
 
 .content #pre-order-part .sticky-placeholder {
@@ -210,7 +212,7 @@ body {
   position: sticky;
   bottom: 3rem;
   text-align: center;
-  font-size: calc(1em + 4vw);
+  font-size: calc(1em + 2vw);
   line-height: 1rem;
 }
 
